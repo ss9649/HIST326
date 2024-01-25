@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/index-styles.css">
+    </head>
+    <body>
+        <h1>Digital History</h1>
+        <p class="main-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam sint earum expedita animi saepe fuga. 
+            Fuga, praesentium adipisci ipsa mollitia quo sequi ea accusamus delectus laborum porro, 
+            quas maxime velit asperiores minima vero. Rem adipisci facere commodi odio, cumque minima? Aliquid 
+            fugiat alias eveniet est delectus quisquam accusantium sunt.</p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="container-link">
+                <a href="about.html" id="link-one">Continue</a> 
+                <a href="history.html" id="link-two">About</a>
+            </div>
+    </body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+body {
+    background-image: url("assets/globe.jpeg") /*cannot access image in separate css file, so placed here for now*/
+}
+
+h1 {
+    font-family: 'Noto Sans';
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+p {
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.825);
+    max-width: 50%;
+    font-size: 1rem;
+    word-spacing: .25rem;
+    background-color: rgba(255, 255, 255, 0.025);
+    box-shadow: 0 4px 80px rgba(10, 10, 10, 0.8);
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.main-paragraph {
+    margin: auto;
+    /*to center the div (main paragraph of content)*/
+}
+
+a {
+    font-family: 'Noto Sans';
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    word-spacing: 0.25rem;
+    padding: 7.5px 100px;
+    border: 3px solid rgba(255, 255, 255, 0.85);
+    /* Border color and width */
+    border-radius: 50px;
+    /* Optional: Add rounded corners */
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+a:hover {
+    background-color: rgba(50, 50, 50, 0.65);
+    border: 3px solid white;
+}
+
+.container-link {
+    text-align: center;
+}
+</style>
