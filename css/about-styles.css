@@ -3,7 +3,8 @@
 
 *::selection {
     color: white;
-    background-color: rgba(17, 88, 138, 0.602);
+    /*background-color: rgba(17, 88, 138, 0.602);*/
+    background-color: rgb(26, 102, 174);
 }
 
 body {
@@ -55,9 +56,9 @@ p {
 }
 
 h3 a:nth-child(1) img { /*previously child 2*/
-    width: 48px;
-    height: 48px;
-    margin-left: 90%; /* Adjust the margin as needed */
+    width: 40px;
+    height: 40px;
+    margin-left: 92.5%; /* Adjust the margin as needed */
 }
 
 /*h1 a:nth-child(1) {
@@ -82,7 +83,7 @@ h4{
     text-align: left;
     font-family: 'Lexend';
     color: white;
-    font-size: 1rem;
+    font-size: 1.15rem;
     word-spacing: 4rem;
 }
 
@@ -100,3 +101,122 @@ h4{
     opacity: 0.85;
     cursor: pointer;
 }
+
+/*h4 a::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   background-color: white;
+
+   transition: transform 300ms ease-in-out;
+   transform: scaleX(0);
+   transform-origin: left;
+}
+
+h4 a:hover::before {
+    transform: scaleX(1);
+}
+
+h4 a{
+    z-index: 1;
+}*/
+
+/*h4 a#sources {
+    position: relative;
+    z-index: 1;
+    padding: 10px; /* Adjust the padding as needed 
+}
+
+h4 a#sources::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust the distance from the top 
+    left: -10px; /* Adjust the distance from the left 
+    width: 0;
+    height: calc(100% + 20px); /* Adjust the height to cover the link with padding 
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.196);
+    transition: width 300ms ease-in-out;
+}
+
+h4 a#sources:hover::before {
+    width: calc(100% + 20px);
+}*/ /*left to right*/ 
+
+h4 a#sources {
+    position: relative;
+    z-index: 1;
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+h4 a#sources::before {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust the distance from the bottom */
+    left: -10px; /* Adjust the distance from the left */
+    width: calc(100% + 20px); /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    /*background-color: rgb(47 71 94);*/
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#sources:hover::before {
+    height: calc(100% + 20px);
+}/*bottom to top*/ 
+
+/*first animation ends*/
+
+h4 a#gohome {
+    position: relative;
+    z-index: 1;
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+h4 a#gohome::before {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust the distance from the bottom */
+    left: -10px; /* Adjust the distance from the left */
+    width: calc(100% + 20px); /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    /*background-color: rgb(47 71 94);*/
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#gohome:hover::before {
+    height: calc(100% + 20px);
+}/*bottom to top*/
+
+/*second animation ends*/
+
+h4 a#about {
+    position: relative;
+    z-index: 1;
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+h4 a#about::before {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust the distance from the bottom */
+    left: -10px; /* Adjust the distance from the left */
+    width: calc(100% + 20px); /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#about:hover::before {
+    height: calc(100% + 20px);
+}/*bottom to top*/
+
+/*third animation ends*/
