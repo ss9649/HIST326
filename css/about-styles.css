@@ -53,3 +53,14 @@ p {
     font-family: 'Old Standard TT';
     font-size: 1.25rem;
 }
+
+h3 a:nth-child(1) img { /*previously child 2*/
+    width: 48px;
+    height: 48px;
+    margin-left: 90%; /* Adjust the margin as needed */
+}
+
+
+#github:hover{
+    opacity: 0.85;
+}
