@@ -1,0 +1,74 @@
+<html>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="assets/globe.jpeg" alt="random12345">
+                <img id="slide-2" src="assets/worldmap.jpeg" alt="raom12345">
+                <img id="slide-3" src="assets/globe.jpeg" alt="rando345">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+</html>
+
+
+<style>
+
+.container{
+    padding: 6rem;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto; /*top and bottom is 0 left and right is auto, which centers itself (left and right)*/
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden; /*hide overflow*/
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0 0% 0% 0.25); /*x offset, y offset, blur, spread, color*/ /*hue saturation lightness opacity (alpha)*/
+    border-radius: 0.5rem;
+}
+
+.slider img{
+    flex: 1 0 100%; /*grow shrink basis*/
+    scroll-snap-align: start;
+    object-fit: cover; /*fix distortion*/
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem; /*from bottom*/ /*of image*/
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /*nav sits on top of slider*/
+}
+
+.slider-nav a{
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%; /*to make circular buttons*/
+    background-color: white; /*make buttons white*/
+    opacity: 0.85;
+    transition: opacity ease 250ms; /*transition property*/
+}
+
+.slider-nav a:hover{
+    opacity: 0.5;
+}
+
+.slider-nav a:active{
+    transform: scale(0.9);
+}
+
+</style>

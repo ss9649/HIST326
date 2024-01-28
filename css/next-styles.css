@@ -40,46 +40,6 @@ h3 {
     font-size: 1.15rem;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-p {
-    max-width: 600px; /*max width for spacing and readability*/
-    margin: 0 auto; /*center paragraph horizontally*/
-    text-align: left; /*set text to the left of the paragraph*/
-    line-height: 1.85; /*higher line height for better readability & aesthetics*/
-    font-family: 'PT Serif', 'Old Standard TT'; /*imported fonts from Google*/
-    font-size: 1.2rem; /*relative sizing font size*/
-    color: rgba(0, 0, 0, 0.829); /*text color with slightly lowered alpha value for a pseudo-opaque feeling*/ 
-}
-
-h5 {
-    font-size: 1.40rem;
-    font-family: 'Poppins';
-    font-weight: 500;
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-#email {
-    /* color: rgb(26, 95, 174); */
-    color: rgb(26, 102, 174);
-    font-size: 1.15rem;
-    font-style: italic;
-}
-
-#email:hover {
-    opacity: 0.85;
-}
-
-li {
-    /* color: rgb(8, 96, 159); */
-    color: rgb(26, 102, 174);;
-}
 
 h3 a:nth-child(1) img {
     /*previously child 2*/
@@ -89,14 +49,10 @@ h3 a:nth-child(1) img {
     /* Adjust the margin as needed */
 }
 
-/*h1 a:nth-child(1) {
-    font-size: 1.5rem;
-    margin-left: 50%;
+a {
+    text-decoration: none;
+    color: white;
 }
-
-h1 a:nth-child(1):hover{
-    opacity: 0.85;
-}*/
 
 #github:hover {
     opacity: 0.85;
@@ -129,52 +85,6 @@ h4 {
     opacity: 0.85;
     cursor: pointer;
 }
-
-/*h4 a::before {
-   content: '';
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   z-index: -1;
-   background-color: white;
-
-   transition: transform 300ms ease-in-out;
-   transform: scaleX(0);
-   transform-origin: left;
-}
-
-h4 a:hover::before {
-    transform: scaleX(1);
-}
-
-h4 a{
-    z-index: 1;
-}*/
-
-/*h4 a#sources {
-    position: relative;
-    z-index: 1;
-    padding: 10px; /* Adjust the padding as needed 
-}
-
-h4 a#sources::before {
-    content: '';
-    position: absolute;
-    top: -10px; /* Adjust the distance from the top 
-    left: -10px; /* Adjust the distance from the left 
-    width: 0;
-    height: calc(100% + 20px); /* Adjust the height to cover the link with padding 
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.196);
-    transition: width 300ms ease-in-out;
-}
-
-h4 a#sources:hover::before {
-    width: calc(100% + 20px);
-}*/
-/*left to right*/
 
 h4 a#sources {
     position: relative;
@@ -267,3 +177,66 @@ h4 a#about:hover::before {
 /*bottom to top*/
 
 /*third animation ends*/
+
+
+/* image slider */
+
+.container{
+    padding: 10rem; /*fully flesh with the rest of the page*/
+    background-color: rgba(36, 51, 61, 0.75);
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: fit-content;
+    margin: 0 auto; /*top and bottom is 0 left and right is auto, which centers itself (left and right)*/
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden; /*hide overflow*/
+    /* scroll-snap-type: x mandatory; */
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0 0% 0% 0.25); /*x offset, y offset, blur, spread, color*/ /*hue saturation lightness opacity (alpha)*/
+    border-radius: 0.75rem; /*0.5rem;*/ /*make it rectangular to make it flesh with the page*/
+}
+
+.slider img{
+    flex: 1 0 100%; /*grow shrink basis*/
+    /* scroll-snap-align: start;  */
+    object-fit: cover; /*fix distortion*/
+}
+
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    top: 1.25rem; /*from bottom*/ /*of image*/
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /*nav sits on top of slider*/
+}
+
+.slider-nav a{
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%; /*to make circular buttons*/
+    background-color: white; /*make buttons white*/
+    opacity: 0.85;
+    transition: opacity ease 250ms; /*transition property*/
+}
+
+
+ .slider-nav a:hover{
+    opacity: 0.5;
+}
+
+.slider-nav a:active{
+    transform: scale(0.9);
+} 
+
+img:hover{
+    cursor: pointer;
+}
