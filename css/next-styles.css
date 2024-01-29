@@ -182,7 +182,7 @@ h4 a#about:hover::before {
 /* image slider */
 
 .container{
-    padding: 10rem; /*fully flesh with the rest of the page*/
+    padding: 8rem; /*fully flesh with the rest of the page*/
     background-color: rgba(36, 51, 61, 0.75);
 }
 
@@ -239,4 +239,5 @@ h4 a#about:hover::before {
 
 img:hover{
     cursor: pointer;
+    opacity: 0.85;
 }
