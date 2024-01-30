@@ -181,6 +181,10 @@ h4 a#about:hover::before {
 
 /* image slider */
 
+html{
+    scroll-padding-top: 5rem; /*fixes how the anchor snaps to the image! Now snaps with some room on top for better viewing*/ 
+}
+
 .container{
     padding: 8rem; /*fully flesh with the rest of the page*/
     background-color: rgba(36, 51, 61, 0.75);
