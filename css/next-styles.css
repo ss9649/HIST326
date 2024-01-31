@@ -178,6 +178,34 @@ h4 a#about:hover::before {
 
 /*third animation ends*/
 
+h4 a#gallery {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    /* Adjust the padding as needed */
+}
+
+h4 a#gallery::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    /* Adjust the distance from the bottom */
+    left: -10px;
+    /* Adjust the distance from the left */
+    width: calc(100% + 20px);
+    /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#gallery:hover::before {
+    height: calc(100% + 20px);
+}
+
+/* fourth animation ends */
+
 
 /* image slider */
 
@@ -203,7 +231,7 @@ html{
     /* scroll-snap-type: x mandatory; */
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0 0% 0% 0.25); /*x offset, y offset, blur, spread, color*/ /*hue saturation lightness opacity (alpha)*/
-    border-radius: 0.75rem; /*0.5rem;*/ /*make it rectangular to make it flesh with the page*/
+    border-radius: 1rem; /*0.5rem;*/ /*make it rectangular to make it flesh with the page*/
 }
 
 .slider img{
