@@ -88,12 +88,22 @@ li {
 
 h3 {
     display: flex;
-    
+    justify-content: flex-end;
 }
 
 h3 a {
-    margin-right: 20px; /* Add some space between the two anchors */
+    margin-right: 25px; /* Add some space between the two anchors */
 }
+
+/* styles for the github image link in the footer */
+/*h3 a:nth-child(1) img {
+    /*previously child 2
+    width: 50px;
+    height: 50px;
+    /* margin-left: 92.5%; */
+    /* Adjust the margin as needed 
+    border-radius: 10px;
+}*/
 
 /* styles for the github image link in the footer */
 h3 a:nth-child(1) img {
@@ -111,6 +121,7 @@ h3 a:nth-child(2) img {
     /* margin-left: 87.5%; */
     /* display: inline; */
     /* Adjust the margin as needed */
+    margin-right: 40px;
 }
 
 /*h1 a:nth-child(1) {
@@ -122,12 +133,22 @@ h1 a:nth-child(1):hover{
     opacity: 0.85;
 }*/
 
-#github:hover {
-    opacity: 0.85;
+#github:hover { /*these edits highlight the inside of the github logo, do not know if I will keep this*/
+    opacity: 0.9;
+    background-color: rgb(26, 102, 174);
+    border-radius: 50%;
 }
 
 #linkedin:hover {
-    opacity: 0.85;
+    opacity: 0.9;
+    background-color: rgb(26, 102, 174);
+    border-radius: 50%;
+}
+
+#cc:hover {
+    opacity: 0.9;
+    background-color: white;
+    border-radius: 50%;
 }
 
 h4 {
