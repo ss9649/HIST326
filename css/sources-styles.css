@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*::selection {
+    color: white;
+    /*background-color: rgba(17, 88, 138, 0.602);*/
+    background-color: rgb(26, 102, 174);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    background-color: rgba(17, 33, 44, 0.9);
+    
+    margin: 0;
+    padding: 70px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-family: 'Lexend';
+    color: white;
+    font-size: 3rem;
+}
+
+h3 {
+    background-color: rgba(17, 33, 44, 0.9);
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-family: 'Lexend';
+    color: white;
+    font-size: 1.15rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    max-width: 600px; /*max width for spacing and readability*/
+    margin: 0 auto; /*center paragraph horizontally*/
+    text-align: left; /*set text to the left of the paragraph*/
+    line-height: 1.85; /*higher line height for better readability & aesthetics*/
+    font-family: 'PT Serif', 'Old Standard TT'; /*imported fonts from Google*/
+    font-size: 1.2rem; /*relative sizing font size*/
+    color: rgba(0, 0, 0, 0.829); /*text color with slightly lowered alpha value for a pseudo-opaque feeling*/ 
+}
+
+h5 {
+    font-size: 1.40rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* design not in use until further notice */
+/* #p1::first-letter{
+    font-size: 3rem;
+} */
+
+#email {
+    /* color: rgb(26, 95, 174); */
+    color: rgb(26, 102, 174);
+    font-size: 1.15rem;
+    font-style: italic;
+}
+
+#email:hover {
+    opacity: 0.85;
+}
+
+li {
+    /* color: rgb(8, 96, 159); */
+    color: rgb(26, 102, 174);;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+h3 a {
+    margin-right: 25px; /* Add some space between the two anchors */
+}
+
+/* styles for the github image link in the footer */
+/*h3 a:nth-child(1) img {
+    /*previously child 2
+    width: 50px;
+    height: 50px;
+    /* margin-left: 92.5%; */
+    /* Adjust the margin as needed 
+    border-radius: 10px;
+}*/
+
+/* styles for the github image link in the footer */
+h3 a:nth-child(1) img {
+    /*previously child 2*/
+    width: 36px;
+    height: 36px;
+    /* margin-left: 92.5%; */
+    /* Adjust the margin as needed */
+}
+
+h3 a:nth-child(2) img {
+    /*previously child 2*/
+    width: 38px;
+    height: 38px;
+    /* margin-left: 87.5%; */
+    /* display: inline; */
+    /* Adjust the margin as needed */
+    margin-right: 40px;
+}
+
+/*h1 a:nth-child(1) {
+    font-size: 1.5rem;
+    margin-left: 50%;
+}
+
+h1 a:nth-child(1):hover{
+    opacity: 0.85;
+}*/
+
+#github:hover { /*these edits highlight the inside of the github logo, do not know if I will keep this*/
+    opacity: 0.85;
+    /* background-color: rgb(26, 102, 174); */ /*commenting out background color for now*/
+    /* border-radius: 50%; */
+}
+
+#linkedin:hover {
+    opacity: 0.85;
+    /* background-color: rgb(26, 102, 174); */ /*commenting out background color for now*/
+    /* border-radius: 50%; */
+}
+
+#cc:hover {
+    opacity: 0.9;
+    background-color: white;
+    border-radius: 50%;
+}
+
+h4 {
+    background-color: rgba(36, 51, 61, 0.9);
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-family: 'Lexend';
+    color: white;
+    font-size: 1.15rem;
+    word-spacing: 4rem;
+}
+
+#gohome:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+#about:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+#sources:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+/*h4 a::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   background-color: white;
+
+   transition: transform 300ms ease-in-out;
+   transform: scaleX(0);
+   transform-origin: left;
+}
+
+h4 a:hover::before {
+    transform: scaleX(1);
+}
+
+h4 a{
+    z-index: 1;
+}*/
+
+/*h4 a#sources {
+    position: relative;
+    z-index: 1;
+    padding: 10px; /* Adjust the padding as needed 
+}
+
+h4 a#sources::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust the distance from the top 
+    left: -10px; /* Adjust the distance from the left 
+    width: 0;
+    height: calc(100% + 20px); /* Adjust the height to cover the link with padding 
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.196);
+    transition: width 300ms ease-in-out;
+}
+
+h4 a#sources:hover::before {
+    width: calc(100% + 20px);
+}*/
+/*left to right*/
+
+h4 a#sources {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    /* Adjust the padding as needed */
+}
+
+h4 a#sources::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    /* Adjust the distance from the bottom */
+    left: -10px;
+    /* Adjust the distance from the left */
+    width: calc(100% + 20px);
+    /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    /*background-color: rgb(47 71 94);*/
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#sources:hover::before {
+    height: calc(100% + 20px);
+}
+
+/*bottom to top*/
+
+/*first animation ends*/
+
+h4 a#gohome {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    /* Adjust the padding as needed */
+}
+
+h4 a#gohome::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    /* Adjust the distance from the bottom */
+    left: -10px;
+    /* Adjust the distance from the left */
+    width: calc(100% + 20px);
+    /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    /*background-color: rgb(47 71 94);*/
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#gohome:hover::before {
+    height: calc(100% + 20px);
+}
+
+/*bottom to top*/
+
+/*second animation ends*/
+
+h4 a#about {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    /* Adjust the padding as needed */
+}
+
+h4 a#about::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    /* Adjust the distance from the bottom */
+    left: -10px;
+    /* Adjust the distance from the left */
+    width: calc(100% + 20px);
+    /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#about:hover::before {
+    height: calc(100% + 20px);
+}
+
+/*bottom to top*/
+
+/*third animation ends*/
+
+h4 a#gallery {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    /* Adjust the padding as needed */
+}
+
+h4 a#gallery::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    /* Adjust the distance from the bottom */
+    left: -10px;
+    /* Adjust the distance from the left */
+    width: calc(100% + 20px);
+    /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    /*background-color: rgb(47 71 94);*/
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#gallery:hover::before {
+    height: calc(100% + 20px);
+}
+
+/*fourth animation ends*/
