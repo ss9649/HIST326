@@ -345,3 +345,11 @@ h4 a#gallery:hover::before {
 }
 
 /*fourth animation ends*/
+@media (max-width: 600px) 
+{
+    h4
+    {
+        font-size: 0.875rem;
+        word-spacing: 1rem;
+    }
+}
