@@ -316,3 +316,32 @@ h4 a#about:hover::before {
 /*bottom to top*/
 
 /*third animation ends*/
+
+h4 a#gallery {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    /* Adjust the padding as needed */
+}
+
+h4 a#gallery::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    /* Adjust the distance from the bottom */
+    left: -10px;
+    /* Adjust the distance from the left */
+    width: calc(100% + 20px);
+    /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    /*background-color: rgb(47 71 94);*/
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#gallery:hover::before {
+    height: calc(100% + 20px);
+}
+
+/*fourth animation ends*/

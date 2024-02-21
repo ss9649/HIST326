@@ -3,23 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
+/* styles for the entire page, this is here to change
+the colors of the highlighting */
 *::selection {
     color: white;
     /*background-color: rgba(17, 88, 138, 0.602);*/
     background-color: rgb(26, 102, 174);
 }
 
+/*styles for the body element, this is here to 
+aid in banner design*/
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
+/*this is the second header, which serves as
+essentially a title page. The goal is to stretch
+it towards the entire width of the page. */
 h1 {
     background-color: rgba(17, 33, 44, 0.9);
-    
     margin: 0;
-    padding: 70px;
+    padding: 70px; /*change the size of the banner*/
     width: 100%;
     height: 100%;
     text-align: left;
@@ -27,6 +33,9 @@ h1 {
     color: white;
     font-size: 3rem;
 }
+
+/*this is the footer banner, with the same 
+goal as the above banner. */
 
 h3 {
     background-color: rgba(17, 33, 44, 0.9);
@@ -40,7 +49,12 @@ h3 {
     font-size: 1.15rem;
 }
 
-
+/* this selects the image
+element that is a child of 
+the first anchor in the h3 element
+the goal here is to resize the png
+to make it a clickable link in the 
+footer, and also space it correctly.*/
 h3 a:nth-child(1) img {
     /*previously child 2*/
     width: 40px;
@@ -49,15 +63,25 @@ h3 a:nth-child(1) img {
     /* Adjust the margin as needed */
 }
 
+/*general rule for all links,
+no underlining (automatic text
+decoration and the color for 
+the text is set to white*/
 a {
     text-decoration: none;
     color: white;
 }
 
+/*hovering over the github image in the 
+footer will change it's opacity*/
 #github:hover {
     opacity: 0.85;
 }
 
+/* this is the header rules for the navbar,
+this is also intended to be a banner that 
+stretches across the full width of the page,
+it contains links to the other pages of the site */
 h4 {
     background-color: rgba(36, 51, 61, 0.9);
     margin: 0;
@@ -71,21 +95,33 @@ h4 {
     word-spacing: 4rem;
 }
 
+/* (1) hovering over the link
+titled home will lower the
+opacity and also change the 
+cursor to be a pointer, the reason
+it is not automatically a pointer
+is because it is housed within the
+h4 tag. */
 #gohome:hover {
     opacity: 0.85;
     cursor: pointer;
 }
 
+/* same intent as (1) */
 #about:hover {
     opacity: 0.85;
     cursor: pointer;
 }
 
+/* same intent as (1) */
 #sources:hover {
     opacity: 0.85;
     cursor: pointer;
 }
 
+/* link styling for the link
+that will take the user to an 
+alternate view of the image gallery. */
 #nextlink{
     font-size: 1.25rem;
     text-decoration: underline;
@@ -93,10 +129,17 @@ h4 {
     
 }
 
+/* styling for the above link,
+simply lowers the opacity. */
 #nextlink:hover{
     opacity: 0.75;
 }
 
+/* ANIMATION 1 */
+/* this is the start of the animation
+the user can see when hovering over the navbar
+links, it is repeated for all of the links.
+It is a box going from the bottom to top of the link */
 h4 a#sources {
     position: relative;
     z-index: 1;
@@ -123,11 +166,10 @@ h4 a#sources::before {
 h4 a#sources:hover::before {
     height: calc(100% + 20px);
 }
+/*ANIMATION 1 ends*/
 
-/*bottom to top*/
 
-/*first animation ends*/
-
+/* ANIMATION 2 */
 h4 a#gohome {
     position: relative;
     z-index: 1;
@@ -154,11 +196,10 @@ h4 a#gohome::before {
 h4 a#gohome:hover::before {
     height: calc(100% + 20px);
 }
+/*ANIMATION 2 ends*/
 
-/*bottom to top*/
 
-/*second animation ends*/
-
+/* ANIMATION 3 */
 h4 a#about {
     position: relative;
     z-index: 1;
@@ -184,11 +225,38 @@ h4 a#about::before {
 h4 a#about:hover::before {
     height: calc(100% + 20px);
 }
+/* ANIMATION 3 ends */
 
-/*bottom to top*/
 
-/*third animation ends*/
+/* ANIMATION 4 */
+h4 a#gallery-slider {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    /* Adjust the padding as needed */
+}
 
+h4 a#gallery-slider::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    /* Adjust the distance from the bottom */
+    left: -10px;
+    /* Adjust the distance from the left */
+    width: calc(100% + 20px);
+    /* Adjust the width to cover the link with padding */
+    height: 0;
+    z-index: -1;
+    background-color: rgb(26, 102, 174);
+    transition: height 200ms ease-in-out;
+}
+
+h4 a#gallery-slider:hover::before {
+    height: calc(100% + 20px);
+}
+/* ANIMATION 4 ends */
+
+/* ANIMATION 4 */
 h4 a#gallery {
     position: relative;
     z-index: 1;
@@ -215,13 +283,15 @@ h4 a#gallery:hover::before {
     height: calc(100% + 20px);
 }
 
-/* fourth animation ends */
-
 
 /* image slider */
 
 html{
-    scroll-padding-top: 5rem; /*fixes how the anchor snaps to the image! Now snaps with some room on top for better viewing*/ 
+    /*fixes how the anchor snaps to the image! 
+    Now snaps with some room on top for better viewing*/ 
+    scroll-padding-top: 6rem; 
+    /* scroll-padding-top: 75%;  */
+
 }
 
 .container{
@@ -232,7 +302,9 @@ html{
 .slider-wrapper{
     position: relative;
     max-width: fit-content;
-    margin: 0 auto; /*top and bottom is 0 left and right is auto, which centers itself (left and right)*/
+    /*top and bottom is 0 left and right is auto, 
+    which centers itself (left and right)*/
+    margin: 0 auto; 
 }
 
 .slider{
@@ -241,7 +313,9 @@ html{
     overflow-x: hidden; /*hide overflow*/
     /* scroll-snap-type: x mandatory; */
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0 0% 0% 0.25); /*x offset, y offset, blur, spread, color*/ /*hue saturation lightness opacity (alpha)*/
+    /*x offset, y offset, blur, spread, color*/ 
+    /*hue saturation lightness opacity (alpha)*/
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0 0% 0% 0.25); 
     border-radius: 1rem; /*0.5rem;*/ /*make it rectangular to make it flesh with the page*/
 }
 
