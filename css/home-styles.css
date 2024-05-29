@@ -18,13 +18,10 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: rgb(245, 245, 245);
-    /* background-color: rgb(24, 24, 27); */
-
 }
 
 #title{
-    max-width: 70vw;
+    max-width: 80vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -35,29 +32,14 @@ h1 {
     background-color: rgba(17, 33, 44, 0.9); 
     /* background-color: rgb(217, 131, 50); */
     margin: 0;
-    padding: 5vw;
+    padding: 3vw;
     width: 100vw;
-    height: 5vh;
-    text-align: left;
+    height: 15vh;
+    text-align: center;
     font-family: 'Lexend';
     color: white;
-    font-size: 6vh;
+    font-size: 8vh;
 }
-
-h2{
-    /* color: rgb(255, 255, 255); */
-    font-family: 'Lexend';
-    font-size: 5vh;
-    max-width: 70vw;
-    text-align: left;
-    padding-left: 15vw;
-}
-
-#mini{
-    font-size: 2.5vh;
-    word-spacing: 0rem;
-}
-
 
 h3 {
     background-color: rgba(17, 33, 44, 0.9);
@@ -76,14 +58,28 @@ a {
     color: white;
 }
 
-p {
-    max-width: 65vw; /*max width for spacing and readability*/
+ul{
+    max-width: 70vw; /*max width for spacing and readability*/
     margin: 0 auto; /*center paragraph horizontally*/
     text-align: left; /*set text to the left of the paragraph */
     line-height: 1.85; /*higher line height for better readability & aesthetics*/
     font-family: 'PT Serif', 'Old Standard TT'; /*imported fonts from Google*/
-    font-size: 1.15rem; /*relative sizing font size*/
+    font-size: 1.35rem; /*relative sizing font size*/
     color: rgba(0, 0, 0, 0.829); /*text color with slightly lowered alpha value for a pseudo-opaque feeling*/ 
+}
+
+p {
+    max-width: 70vw; /*max width for spacing and readability*/
+    margin: 0 auto; /*center paragraph horizontally*/
+    text-align: left; /*set text to the left of the paragraph */
+    line-height: 1.85; /*higher line height for better readability & aesthetics*/
+    font-family: 'PT Serif', 'Old Standard TT'; /*imported fonts from Google*/
+    font-size: 1.35rem; /*relative sizing font size*/
+    color: rgba(0, 0, 0, 0.829); /*text color with slightly lowered alpha value for a pseudo-opaque feeling*/ 
+    background: rgba(255, 255, 255); /*White background*/
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /*Subtle box shadow */
+    border-radius: 0.65rem; /*Rounded corners*/
+    padding: 1vw;
 }
 
 h5 {
@@ -91,7 +87,7 @@ h5 {
     font-family: 'Poppins';
     font-weight: 500;
     text-align: left;
-    max-width: 65vw;
+    max-width: 70vw;
     margin: 0 auto;
     line-height: 1.6;
 }
@@ -187,11 +183,6 @@ h4 {
     color: white;
     font-size: 1.15rem;
     word-spacing: 4rem;
-}
-
-#titlelogo{
-    font-size: 1.35rem;
-    word-spacing: 0rem;
 }
 
 #gohome:hover {
@@ -388,10 +379,6 @@ h4 a#gallery:hover::before {
     h1{
         font-size: 2rem;
   }
-  h4{
-    font-size: 0.6rem;
-    word-spacing: 1rem;
-  }
 }
 
 #p1{
@@ -399,5 +386,5 @@ h4 a#gallery:hover::before {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 70vw;
+    max-width: 80vw;
 }
